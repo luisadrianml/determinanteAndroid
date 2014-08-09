@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project determinante</string>
+    <string name="firstAct">Determinante</string>
+    <string name="action_settings">Settings</string>
+	<string name="ordenMatrix">Orden:</string>
+	<string name="promptSpinner">Seleccione un orden</string>
+	<string name="messageWelcom">El primer paso es seleccionar el grado para luego insertar los datos de la matriz, 
+	    hasta llegar al resultado. \n\n¡Suerte!"</string>
+	<string name="titleWelcom">¡Bienvenido!</string>
+	<string name="positiveBtn">Entendido</string>
+	<string name="enterBtn">Ingresar</string>
+</resources>
