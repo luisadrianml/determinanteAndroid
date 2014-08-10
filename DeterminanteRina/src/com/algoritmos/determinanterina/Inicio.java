@@ -73,14 +73,25 @@ public class Inicio extends Activity {
         mShared = getSharedPreferences(PREFS_NAME, 0);
         
         if (!mShared.contains("KEY_FIRST_RUN")) {
-            KEY_FIRST_RUN = "firstrun";
             welcomeDialog();
+            KEY_FIRST_RUN = "firstrun";
         } 
+        
+        
 
         editor = mShared.edit();
         editor.putString("KEY_FIRST_RUN", KEY_FIRST_RUN);
-        editor.commit();
+        editor.apply();
 
+        //String p = mShared.getString("KEY_FIRST_RUN", "VACIO").toString();
+        
+       /* editor.putString("prueba", "Luis Martinez");
+        editor.apply();*/
+        
+        //Toast.makeText(getApplicationContext(), mShared.getString("prueba", "EMPTY"), Toast.LENGTH_LONG).show();
+        
+/*        editor.remove("KEY_FIRST_RUN");
+        editor.apply();*/
         
         
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, spinnerArray);
